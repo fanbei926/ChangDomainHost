@@ -1,0 +1,265 @@
+
+2021/11/08 02:00:00 Start
+2021/11/08 02:00:00 DNS result: 114.227.162.213
+2021/11/08 02:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 771F3C3E-30A2-53F9-B693-53C463D2F43A
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"771F3C3E-30A2-53F9-B693-53C463D2F43A"}
+
+2021/11/08 02:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/08 14:00:00 Start
+2021/11/08 14:00:00 DNS result: 114.227.162.213
+2021/11/08 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 178D2A1B-EFD1-5204-9240-CBCE58F11E19
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"178D2A1B-EFD1-5204-9240-CBCE58F11E19"}
+
+2021/11/08 14:00:05 runtime error: invalid memory address or nil pointer dereference
+2021/11/09 02:00:00 Start
+2021/11/09 02:00:00 DNS result: 114.227.162.213
+2021/11/09 02:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 040489FB-4265-599C-AEF4-E7BDED41908B
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"040489FB-4265-599C-AEF4-E7BDED41908B"}
+
+2021/11/09 02:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/09 14:00:00 Start
+2021/11/09 14:00:00 DNS result: 114.227.162.213
+2021/11/09 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 72513651-906C-5F17-959B-1486C4CED26F
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"72513651-906C-5F17-959B-1486C4CED26F"}
+
+2021/11/09 14:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/10 02:00:00 Start
+2021/11/10 02:00:00 exit status 56
+2021/11/10 02:00:00 Curl result: 
+2021/11/10 02:00:00 DNS result: 114.227.162.213
+2021/11/10 14:00:00 Start
+2021/11/10 14:00:00 DNS result: 114.227.162.213
+2021/11/10 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 1B32832B-B3AC-5AEF-A455-F458DB93AAA0
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"1B32832B-B3AC-5AEF-A455-F458DB93AAA0"}
+
+2021/11/10 14:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/11 02:00:00 Start
+2021/11/11 02:00:00 DNS result: 114.227.162.213
+2021/11/11 02:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 59737882-96EC-5591-9DCF-6FF936891882
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"59737882-96EC-5591-9DCF-6FF936891882"}
+
+2021/11/11 02:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/11 14:00:00 Start
+2021/11/11 14:00:00 DNS result: 114.227.162.213
+2021/11/11 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 81D29751-C301-5751-8FE5-ED0ACAD61CF6
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"81D29751-C301-5751-8FE5-ED0ACAD61CF6"}
+
+2021/11/11 14:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/12 02:00:00 Start
+2021/11/12 02:00:00 DNS result: 114.227.162.213
+2021/11/12 02:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 996947F1-B255-513F-9C53-9FA4951283BB
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"996947F1-B255-513F-9C53-9FA4951283BB"}
+
+2021/11/12 02:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/12 14:00:00 Start
+2021/11/12 14:00:00 DNS result: 114.227.162.213
+2021/11/12 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: DE28BDA2-7C0E-533D-AD63-6DD07D11D4F6
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"DE28BDA2-7C0E-533D-AD63-6DD07D11D4F6"}
+
+2021/11/12 14:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/13 02:00:00 Start
+2021/11/13 02:00:00 DNS result: 114.227.162.213
+2021/11/13 02:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 6FD3B1EF-C26D-58B5-8332-E59D6C11A031
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"6FD3B1EF-C26D-58B5-8332-E59D6C11A031"}
+
+2021/11/13 02:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/13 14:00:00 Start
+2021/11/13 14:00:00 Curl result: 114.227.162.213
+2021/11/13 14:00:05 DNS result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: B07455AE-DB98-5759-9992-5F0A1DC0EBCA
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"B07455AE-DB98-5759-9992-5F0A1DC0EBCA"}
+
+2021/11/13 14:00:05 runtime error: invalid memory address or nil pointer dereference
+2021/11/14 02:00:00 Start
+2021/11/14 02:00:00 DNS result: 114.227.162.213
+2021/11/14 02:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: CB7D7A86-0667-556B-A6C6-5BB3FF168288
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"CB7D7A86-0667-556B-A6C6-5BB3FF168288"}
+
+2021/11/14 02:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/14 14:00:00 Start
+2021/11/14 14:00:00 DNS result: 114.227.162.213
+2021/11/14 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 23E166F6-5D07-599C-9EF5-C17155217664
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"23E166F6-5D07-599C-9EF5-C17155217664"}
+
+2021/11/14 14:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/15 02:00:00 Start
+2021/11/15 02:00:00 DNS result: 114.227.162.213
+2021/11/15 02:02:38 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: F2279394-6FAF-551E-9BA0-2D6B48603FC1
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"F2279394-6FAF-551E-9BA0-2D6B48603FC1"}
+
+2021/11/15 02:02:39 runtime error: invalid memory address or nil pointer dereference
+2021/11/15 14:00:00 Start
+2021/11/15 14:00:00 DNS result: 114.227.162.213
+2021/11/15 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: AB76E7DE-02E4-51CE-819F-346F19506A5E
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"AB76E7DE-02E4-51CE-819F-346F19506A5E"}
+
+2021/11/15 14:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/16 02:00:00 Start
+2021/11/16 02:00:00 DNS result: 114.227.162.213
+2021/11/16 02:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 043E0F8A-FAF8-5869-9DC4-7D6A675B66F2
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"043E0F8A-FAF8-5869-9DC4-7D6A675B66F2"}
+
+2021/11/16 02:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/16 14:00:00 Start
+2021/11/16 14:00:00 DNS result: 114.227.162.213
+2021/11/16 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 2583B4C4-D560-5766-B661-1947D8B69B67
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"2583B4C4-D560-5766-B661-1947D8B69B67"}
+
+2021/11/16 14:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/17 02:00:00 Start
+2021/11/17 02:00:00 DNS result: 114.227.162.213
+2021/11/17 02:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: EB761CF4-FCB1-57A9-8EAC-3383C96ADC77
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"EB761CF4-FCB1-57A9-8EAC-3383C96ADC77"}
+
+2021/11/17 02:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/17 14:00:00 Start
+2021/11/17 14:00:00 DNS result: 114.227.162.213
+2021/11/17 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 17A545C0-FC09-5E90-924F-076A72C03E71
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"17A545C0-FC09-5E90-924F-076A72C03E71"}
+
+2021/11/17 14:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/18 02:00:00 Start
+2021/11/18 02:00:00 DNS result: 114.227.162.213
+2021/11/18 02:00:01 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 054A533D-8768-578A-B328-43AC5C3B5028
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"054A533D-8768-578A-B328-43AC5C3B5028"}
+
+2021/11/18 02:00:01 runtime error: invalid memory address or nil pointer dereference
+2021/11/18 14:00:00 Start
+2021/11/18 14:00:00 Curl result: 114.227.162.213
+2021/11/18 14:00:01 DNS result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 672AE0D0-F0C1-54F8-9803-5A060DC0AE56
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"672AE0D0-F0C1-54F8-9803-5A060DC0AE56"}
+
+2021/11/18 14:00:01 runtime error: invalid memory address or nil pointer dereference
+2021/11/19 02:00:00 Start
+2021/11/19 02:00:00 DNS result: 114.227.162.213
+2021/11/19 02:00:03 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: CE50A874-63C1-59A8-B86B-AE1CC7B51420
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"CE50A874-63C1-59A8-B86B-AE1CC7B51420"}
+
+2021/11/19 02:00:03 runtime error: invalid memory address or nil pointer dereference
+2021/11/19 14:00:00 Start
+2021/11/19 14:00:00 DNS result: 114.227.162.213
+2021/11/19 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: EC261230-4069-5704-91A8-C32A443635BD
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"EC261230-4069-5704-91A8-C32A443635BD"}
+
+2021/11/19 14:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/20 02:00:00 Start
+2021/11/20 02:00:00 DNS result: 114.227.162.213
+2021/11/20 02:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 4A32787A-7B91-5AC3-8C16-8F1783013673
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"4A32787A-7B91-5AC3-8C16-8F1783013673"}
+
+2021/11/20 02:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/20 14:00:00 Start
+2021/11/20 14:00:00 DNS result: 114.227.162.213
+2021/11/20 14:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 463FA6E3-55CB-5FE8-8557-69E5342A21BD
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"463FA6E3-55CB-5FE8-8557-69E5342A21BD"}
+
+2021/11/20 14:00:00 runtime error: invalid memory address or nil pointer dereference
+2021/11/21 02:00:00 Start
+2021/11/21 02:00:00 DNS result: 114.227.162.213
+2021/11/21 02:00:00 Curl result: 114.227.162.213
+SDKError:
+   StatusCode: 0
+   Code: DomainRecordDuplicate
+   Message: code: 400, The DNS record already exists. request id: 8D93B596-B40F-5262-8517-6C3D1AFD2021
+   Data: {"Code":"DomainRecordDuplicate","HostId":"dns.aliyuncs.com","Message":"The DNS record already exists.","Recommend":"https://error-center.aliyun.com/status/search?Keyword=DomainRecordDuplicate\u0026source=PopGw","RequestId":"8D93B596-B40F-5262-8517-6C3D1AFD2021"}
+
+2021/11/21 02:00:00 runtime error: invalid memory address or nil pointer dereference
