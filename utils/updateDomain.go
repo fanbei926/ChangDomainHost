@@ -2,9 +2,8 @@ package utils
 
 import (
 	"errors"
-	"fmt"
-	"log"
 	"net"
+	"os"
 	"os/exec"
 	"strings"
 	"sync"
@@ -14,6 +13,7 @@ import (
 	"github.com/alibabacloud-go/tea/tea"
 	"github.com/bitly/go-simplejson"
 	"github.com/robfig/cron/v3"
+	"github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 )
 
@@ -27,8 +27,14 @@ type Info struct {
 
 var info = &Info{}
 var shareMap sync.Map
+var logs = logrus.New()
 
 func init() {
+	logs.Out = os.Stdout
+	logs.SetFormatter(&logrus.TextFormatter{
+		FullTimestamp: true,
+	})
+
 	viper.SetConfigFile("./ali.yml") // 使用 Viper 获取配置文件
 	err := viper.ReadInConfig()
 	if err != nil {
@@ -42,6 +48,9 @@ func init() {
 		viper.GetString("Schedule"),
 		viper.GetString("DomainName"),
 	}
+	logs.WithFields(logrus.Fields{
+		"info": info,
+	}).Info("Config info -->")
 }
 
 /**
@@ -56,10 +65,16 @@ func CreateClient() (client *alidns20150109.Client, err error) {
 		// 您的AccessKey Secret
 		AccessKeySecret: &info.AccessSecret,
 	}
+
 	// 访问的域名
 	config.Endpoint = tea.String("dns.aliyuncs.com")
 	// client = &alidns20150109.Client{}
 	client, err = alidns20150109.NewClient(config)
+
+	logs.WithFields(logrus.Fields{
+		"accesskeyid":     &info.AccessID,
+		"accesskeysecret": &info.AccessSecret,
+	}).Info("Start create ali client -->")
 	return client, err
 }
 
@@ -73,6 +88,9 @@ func CreateCron() (c *cron.Cron, schedule string) {
 		cron.Minute | cron.Hour | cron.Dom | cron.Month | cron.Dow,
 	)
 	c = cron.New(cron.WithParser(parser))
+	logs.WithFields(logrus.Fields{
+		"schedule": info.Schedule,
+	}).Info("Start create cron client -->")
 	return c, info.Schedule
 }
 
@@ -95,7 +113,11 @@ func ExecCurl() (err error) {
 	if address == nil {
 		ip = ""
 	}
-	log.Println("Curl result: " + ip)
+
+	logs.WithFields(logrus.Fields{
+		"curlIP": ip,
+	}).Info("Exec curl command -->")
+
 	shareMap.Store("curlRes", ip)
 	return nil
 }
@@ -121,7 +143,10 @@ func ExecLookup() (err error) {
 	if address == nil {
 		ip = ""
 	}
-	log.Println("DNS result: " + ip)
+
+	logs.WithFields(logrus.Fields{
+		"dnsIP": ip,
+	}).Info("Exec lookup command -->")
 	shareMap.Store("dnsRes", ip)
 	return nil
 }
@@ -143,8 +168,8 @@ func UpdateDomainRecord() error {
 	if dnsIP == "" || curlIP == "" {
 		return errors.New("neither of them has a value")
 	}
-
 	if curlIP != dnsIP {
+		logs.Println("Start compare two ips...")
 		client, err := CreateClient()
 		if err != nil {
 			return err
@@ -152,6 +177,9 @@ func UpdateDomainRecord() error {
 
 		tmps := strings.Split(info.DomainName, ".") // 解析出二级域名头
 		rr := tmps[0]
+		logs.WithFields(logrus.Fields{
+			"domainHead": rr,
+		}).Debug("Resolve domain head -->")
 		updateDomainRecordRequest := &alidns20150109.UpdateDomainRecordRequest{
 			RecordId: tea.String(info.RecordID),
 			RR:       tea.String(rr),
@@ -168,7 +196,15 @@ func UpdateDomainRecord() error {
 		if err != nil {
 			return err
 		}
-		fmt.Println(js.Get("RequestId").String())
+
+		logs.Println("Start json unmarshaling...")
+		response, err := js.Get("RecordId").String()
+		if err != nil {
+			return err
+		}
+		logs.WithFields(logrus.Fields{
+			"response": response,
+		}).Info("Change domain response -->")
 	}
 	return nil
 }

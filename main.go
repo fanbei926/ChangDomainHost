@@ -1,8 +1,7 @@
 package main
 
 import (
-	"fmt"
-	"log"
+	"os"
 	"sync"
 
 	"github.com/sirupsen/logrus"
@@ -10,46 +9,55 @@ import (
 )
 
 var wg sync.WaitGroup
+var logs = logrus.New()
 
 func main() {
-	logrus.SetFormatter(&logrus.TextFormatter{})
+	logs.Out = os.Stdout
+	logs.SetFormatter(&logrus.TextFormatter{
+		FullTimestamp: true,
+	})
 	// 开始定时任务
 	c, schedule := utils.CreateCron()
 	c.AddFunc(schedule, func() {
 		defer func() {
 			if r := recover(); r != nil {
-				logrus.Println(r)
+				logs.Errorln(r, " -->")
 			}
 		}()
 
-		log.Println("Start")
+		logs.Println("Start cron schedule...")
 		wg.Add(2)
 
-		go func() { // 执行 crul
+		go func() { // 执行 curl
 			defer wg.Done()
 			err := utils.ExecCurl()
 			if err != nil {
-				fmt.Println(err)
+				logs.WithFields(logrus.Fields{
+					"func": "curl",
+				}).Error(err, " -->")
 				return
 			}
-
 		}()
 
 		go func() { // 执行 lookup
 			defer wg.Done()
 			err := utils.ExecLookup()
 			if err != nil {
-				fmt.Println(err)
+				logs.WithFields(logrus.Fields{
+					"func": "lookup",
+				}).Error(err, " -->")
 				return
 			}
 		}()
 
+		wg.Wait()
 		err := utils.UpdateDomainRecord() // 进行对比更新
 		if err != nil {
-			fmt.Println(err)
+			logs.WithFields(logrus.Fields{
+				"func": "updateDomain",
+			}).Error(err, " -->")
 			return
 		}
-		wg.Wait()
 	})
 	c.Start()
 	defer c.Stop()
