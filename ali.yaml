@@ -1,0 +1,5 @@
+AccessId: "1"
+AccessSecret: "1"
+RecordId: "1"
+Schedule: "*/2 * * * *"
+DomainName: "1.baidu.icu"
